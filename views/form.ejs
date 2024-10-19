@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Enter a new message!</title>
+  </head>
+  <body>
+    <%- include('navbar', {links: links}) %>
+    <form method="POST" action="/new">
+      <input type="text" name="user" placeholder="Enter your name" required>
+      <input type="text" name="text" placeholder="Enter your text" required>
+      <input type="submit" value="Submit">
+    </form>
+  </body>
+</html>

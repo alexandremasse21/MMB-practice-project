@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <%- include('navbar', {links: links}) %>
+        <% for (let i = 0; i < messages.length; i++) {  %>
+            <li>
+                <strong>User:</strong> <%= messages[i].user %><br>
+                <strong>Message:</strong> <%= messages[i].text %><br>
+                <strong>Date:</strong> <%= messages[i].added %>
+            </li>
+        <% } %>
+    </body>
+</html>
